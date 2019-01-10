@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|La+Belle+Aurore');
+//
+//
+$brightYellow: #e3b505;
+$darkBrown: #bb9457;
+$yellow: #f2b450;
+$brown: #382923;
+$black: #191919;
+$grey: #a9b2ac;
+//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $black;
+    background: linear-gradient(rgba(241, 237, 237, 0.85), rgba(245, 242, 242, 0.85)), url('./images/bricks-brickwall.jpg');
+}
+
+//global styles
+.bell-fonts {
+    font-family: 'La Belle Aurore', cursive;
+}
+
+//end of global styles
+//header
