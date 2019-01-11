@@ -4,6 +4,7 @@ $black: #242424;
 body {
     font-family: 'Mr Dafoe', cursive;
     color: $white;
+    background: url(./images/brick-wall-christmas.jpg) center/cover fixed no-repeat;
 }
 
 .info {
@@ -142,4 +143,63 @@ body {
     100% {
         transform: translateY(-10);
     }
+}
+
+// ###########################menu items##############################
+.item-container {
+    position: relative;
+    // for the  link
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0));
+    transition: all 2s ease;
+    &:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+        outline: 10px solid $red;
+        outline-offset: 0.8rem;
+    }
+}
+
+.item-img {
+    transition: all 2s ease;
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.item-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $red;
+    font-size: 2rem;
+    border: {
+        top: 3px solid $red;
+        bottom: 3px solid $red;
+    }
+    transition: all 2s ease;
+    opacity: 1;
+    &:hover {
+        border: 3px solid $white;
+        background: $white;
+        color: $black;
+    }
+}
+
+// ##########################menu#########################
+#menu {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(./images/avocado-cuisine-delicious-684965.jpg) center/cover fixed no-repeat;
+}
+
+.special {
+    border: 3px solid $red;
+    position: relative;
+}
+
+.special-text {
+    position: absolute;
+    background: $red;
+    top: 0;
+    right: 10%;
+    padding: 0 0.4rem;
 }
