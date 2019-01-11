@@ -1,16 +1,79 @@
-body {
-    font-family: 'Mr Dafoe', cursive;
-}
-
 $white: #c9c1ac;
 $red: #d3325f;
+$black: #242424;
+body {
+    font-family: 'Mr Dafoe', cursive;
+    color: $white;
+}
+
 .info {
     background: $white;
     h2 {
         word-spacing: 0.6rem;
     }
+    a {
+        transition: color 2s ease-in-out;
+        &:hover {
+            color: $black;
+        }
+    }
 }
 
 .primary-color {
     color: $red;
+}
+
+// header
+#header {
+    @extend .height-90;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/avocado-cuisine-delicious-684965.jpg);
+    background: {
+        position: center;
+        size: cover;
+        attachment: fixed;
+        repeat: no-repeat;
+    }
+    position: relative;
+}
+
+.height-90 {
+    min-height: calc(100vh - 94px);
+}
+
+.banner {
+    h1 {
+        border: {
+            top: 6px dotted $white;
+            bottom: 6px dotted $white;
+        }
+    }
+}
+
+@keyframes fromLeft {
+    0% {}
+    50% {}
+    100% {}
+}
+
+.main-btn {
+    color: $red;
+    font-size: 2rem;
+    border: 2px solid $red;
+    transition: all 1 ease-in-out;
+    &:hover {
+        color: $black;
+        border: 2px solid $white;
+        background: $white;
+    }
+}
+
+.header-link {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: $white;
+    border-radius: 10px;
+    transition: all 2s ease;
+    color: $black;
 }
